@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+[Screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/SuperJulia2024/frontendmentor-Product-preview-card-component)
-- Live Site URL: [Add live site URL here](https://superjulia2024.github.io/frontendmentor-Product-preview-card-component/)
+- Solution URL: [ttps://github.com/SuperJulia2024/frontendmentor-Product-preview-card-component](https://github.com/SuperJulia2024/frontendmentor-Product-preview-card-component)
+- Live Site URL: [https://superjulia2024.github.io/frontendmentor-Product-preview-card-component/](https://superjulia2024.github.io/frontendmentor-Product-preview-card-component/)
 
 ## My process
 
