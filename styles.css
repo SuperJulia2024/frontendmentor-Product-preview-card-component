@@ -1,0 +1,150 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: Monserrat, sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: var(--cream);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  margin: auto;
+  border-radius: 4%;
+  background-color: var(--white);
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  width: 340px;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+main .text h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: var(--very-dark-blue);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.25rem;
+}
+
+main .text {
+  margin: 24px;
+}
+
+main .text h1 {
+  font-size: 2.3rem;
+  font-family: Fraunces, sans-serif;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+main .text p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.8rem;
+  line-height: 1.8rem;
+}
+
+main .text .price {
+  display: flex;
+}
+
+main .text .price p {
+  display: inline-block;
+}
+
+main .text .price #current_price {
+  font-family: Fraunces, sans-serif;
+  font-weight: 700;
+  color: var(--dark-cyan);
+  font-size: 2.3rem;
+}
+
+main .text .price #old_price {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  margin: 0 0 0 1.2rem;
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button .material-symbols-outlined {
+  font-size: 1.4rem;
+}
+
+button .button-text {
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: 650px;
+  }
+
+  main img {
+    content: url("./images/image-product-desktop.jpg");
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4%;
+  }
+
+  main .text h2 {
+    margin-bottom: 1.9rem;
+  }
+
+  main .text h1 {
+    margin-bottom: 1.9rem;
+  }
+
+  main .text {
+    margin: 34px;
+  }
+
+  main .text p {
+    margin-bottom: 2.8rem;
+  }
+
+  main button {
+    margin-top: 10px;
+  }
+}
