@@ -40,6 +40,10 @@ main img {
   border-top-right-radius: 4%;
 }
 
+main .text {
+  margin: 24px;
+}
+
 main .text h2 {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
@@ -47,10 +51,6 @@ main .text h2 {
   font-size: 1rem;
   margin-bottom: 0.8rem;
   letter-spacing: 0.25rem;
-}
-
-main .text {
-  margin: 24px;
 }
 
 main .text h1 {
@@ -61,7 +61,7 @@ main .text h1 {
   margin-bottom: 1rem;
 }
 
-main .text p {
+main .text p#main-text {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   color: var(--dark-grayish-blue);
@@ -71,10 +71,7 @@ main .text p {
 
 main .text .price {
   display: flex;
-}
-
-main .text .price p {
-  display: inline-block;
+  margin-bottom: 1.6rem;
 }
 
 main .text .price #current_price {
@@ -88,7 +85,7 @@ main .text .price #old_price {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   color: var(--dark-grayish-blue);
-  margin: 0 0 0 1.2rem;
+  margin: 0.9rem 0 0 1.2rem;
   font-size: 1rem;
   text-decoration: line-through;
 }
@@ -116,6 +113,10 @@ button .button-text {
   margin-left: 8px;
 }
 
+button:hover {
+  background-color: rgb(8, 65, 8);
+}
+
 @media (min-width: 768px) {
   main {
     flex-direction: row;
@@ -128,6 +129,10 @@ button .button-text {
     border-bottom-left-radius: 4%;
   }
 
+  main .text {
+    margin: 34px;
+  }
+
   main .text h2 {
     margin-bottom: 1.9rem;
   }
@@ -136,15 +141,11 @@ button .button-text {
     margin-bottom: 1.9rem;
   }
 
-  main .text {
-    margin: 34px;
+  main .text p#main-text {
+    margin-bottom: 1.6rem;
   }
 
-  main .text p {
-    margin-bottom: 2.8rem;
-  }
-
-  main button {
-    margin-top: 10px;
+  main .text .price {
+    margin-bottom: 2.6rem;
   }
 }
